@@ -5,11 +5,14 @@
 
 /* Caja del formulario */
 .login-box {
+
   width: 800px; /* Aumenta el ancho para acomodar la imagen y el formulario */
+
   background-color: #f8f9fa;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+
   display: flex; /* Flexbox para disposición en fila */
 }
 
@@ -38,6 +41,7 @@
 }
 
 /* Estilos para campos de entrada y botones */
+
 input[type="email"],
 input[type="password"],
 button {
@@ -47,10 +51,12 @@ button {
   margin: 10px 0;
 }
 
+
 /* Espaciado en elementos */
 .form-control {
   margin-bottom: 10px;
 }
+
 
 button {
   background-color: #007bff;
@@ -85,6 +91,7 @@ button:focus {
 h4 {
   margin-bottom: 20px;
   margin-top: 30px;
+
 
 
 }

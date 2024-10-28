@@ -13,18 +13,19 @@ body {
   background: url('../../../assets/alcaldia.png') no-repeat center center;
   background-size: cover;
   width: 100%;
-
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* Cambiar a columna para mejor adaptabilidad */
+  flex-wrap: wrap;
+  min-width: 300px;
   position: relative;
 }
 
 .contenido {
   background: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
   padding: 20px;
-  margin-top: 80px;
+  margin: 20px auto; /* Centrado automático */
   border-radius: 10px;
+  max-width: 600px; /* Máximo ancho para pantallas grandes */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para resaltar el contenido */
 }
 
@@ -41,7 +42,8 @@ hr {
 
 .list-group {
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Cambiar a columna para mejor adaptabilidad */
+  align-items: center; /* Centrar botones */
   padding: 0;
 }
 
@@ -71,4 +73,27 @@ button:active {
 button:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .contenido {
+    margin-top: 40px; /* Ajustar el margen superior */
+    width: 90%; /* Ampliar el ancho en pantallas pequeñas */
+  }
+
+  button {
+    width: 100%; /* Botones ocupan el 100% del ancho */
+    padding: 10px; /* Ajustar padding */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Ajustar tamaño de fuente para pantallas muy pequeñas */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Ajustar tamaño de fuente */
+  }
 }
