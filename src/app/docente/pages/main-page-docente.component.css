@@ -13,20 +13,51 @@ body {
   background: url('../../../assets/alcaldia.png') no-repeat center center;
   background-size: cover;
   width: 100%;
+  padding: 20px;
   display: flex;
-  flex-direction: column; /* Cambiar a columna para mejor adaptabilidad */
-  flex-wrap: wrap;
-  min-width: 300px;
-  position: relative;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido principal */
 }
 
+/* Estilo para el bloque "Bienvenido" */
+.contenidoi {
+  align-self: flex-start; /* Mantiene "Bienvenido" a la izquierda */
+  text-align: left; /* Alinea el texto a la izquierda */
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  max-width: 600px; /* Limita el ancho del contenedor */
+  margin-bottom: 0px;
+}
+
+/* Estilo para el bloque "Gestión de docentes" */
 .contenido {
-  background: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+  background: rgba(255, 255, 255, 0.8);
   padding: 20px;
-  margin: 20px auto; /* Centrado automático */
+  margin-top: -20px;
   border-radius: 10px;
-  max-width: 600px; /* Máximo ancho para pantallas grandes */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para resaltar el contenido */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  width: 100%;
+  max-width: 400px;
+
+  max-height: 90%;
+  height: 100%;
+  max-height: 530px;
+
+  text-align: center; /* Centra el contenido de "Gestión de docentes" */
+  align-self: center; /* Centra el bloque de "Gestión de docentes" */
+}
+.contenido img {
+  max-width: 50%; /* La imagen no excederá el 100% del contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+
+.contenido h1 {
+  font-size: 1.5rem;
+}
+
+.contenido h2 {
+  font-size: 1.4rem;
 }
 
 h2 {
@@ -42,8 +73,8 @@ hr {
 
 .list-group {
   display: flex;
-  flex-direction: column; /* Cambiar a columna para mejor adaptabilidad */
-  align-items: center; /* Centrar botones */
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que los botones se ajusten si no hay suficiente espacio */
   padding: 0;
 }
 
@@ -51,14 +82,14 @@ button {
   background-color: #007bff;
   border: none;
   color: white;
-  padding: 15px 30px;
-  font-size: 1.4rem;
+  padding: 10px 25px;
+  font-size: 1.2rem;
   font-weight: bold;
   border-radius: 5px;
   margin: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Añade sombra para resaltar */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
@@ -75,25 +106,32 @@ button:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Media Queries para Responsividad */
-@media (max-width: 768px) {
+/* Media Query para dispositivos pequeños (celulares) */
+@media (max-width: 576px) {
   .contenido {
-    margin-top: 40px; /* Ajustar el margen superior */
-    width: 90%; /* Ampliar el ancho en pantallas pequeñas */
-  }
-
-  button {
-    width: 100%; /* Botones ocupan el 100% del ancho */
-    padding: 10px; /* Ajustar padding */
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem; /* Ajustar tamaño de fuente para pantallas muy pequeñas */
+    margin-top: 20px;
+    padding: 15px;
   }
 
   h2 {
-    font-size: 1.2rem; /* Ajustar tamaño de fuente */
+    font-size: 1.5rem;
+  }
+
+
+}
+
+/* Media Query para tabletas y pantallas medianas */
+@media (max-width: 768px) {
+  .contenido {
+    margin: 20px; /* Espaciado uniforme */
+    width: 90%; /* Ancho del 90% en pantallas medianas */
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  button {
+    width: 100%; /* Los botones ocupan el 100% del ancho */
   }
 }

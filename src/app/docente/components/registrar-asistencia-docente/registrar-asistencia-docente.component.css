@@ -2,14 +2,14 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
   margin: 0;
-  padding: 50px;
+  padding: 20px; /* Reduce el padding en móviles */
 }
 
 h1 {
   text-align: center;
   color: #333;
   margin-bottom: 40px;
-  margin-top: 40px;
+  margin-top: 20px; /* Reduce el margen superior en móviles */
 }
 
 form {
@@ -61,4 +61,39 @@ form {
 
 .btn-secondary:hover {
   background-color: #5a6268;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 576px) {
+  body {
+    padding: 10px; /* Reduce el padding en móviles */
+  }
+
+  form {
+    padding: 20px; /* Reduce el padding del formulario en móviles */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del título en móviles */
+    margin-bottom: 20px; /* Ajusta el margen inferior */
+  }
+
+  .form-control {
+    font-size: 1em; /* Ajusta el tamaño de fuente de los inputs en móviles */
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 10px; /* Reduce el padding de los botones en móviles */
+    font-size: 1em; /* Ajusta el tamaño de los botones en móviles */
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem; /* Aumenta ligeramente el tamaño del título en pantallas medianas */
+  }
+
+  form {
+    padding: 30px; /* Ajusta el padding del formulario en pantallas medianas */
+  }
 }
