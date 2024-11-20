@@ -1,0 +1,73 @@
+<div class="contenidoi" >
+  <h1>Bienvenidor</h1>
+  <hr>
+  <h3>Rector</h3>
+</div>
+
+
+<div id="mi-fondo">
+  <div class="row mt-4">
+
+    <div class="col-3">
+      <!-- Sidebar -->
+
+  <h2>Formularios</h2>
+  <hr>
+
+
+  <ul
+  class="list-group">
+
+  <li class="list-group-item "
+  routerLink="agregar"
+  routerLinkActive="active">
+
+Agregar asistencia
+
+  </li>
+  <li class="list-group-item "
+  routerLink="agregarnovedades"
+  routerLinkActive="active">
+
+Agregar novedad
+
+  </li>
+
+
+
+
+    <li class="list-group-item "
+    routerLink="asistencias"
+    routerLinkActive="active">
+
+  Asistencias pendientes
+
+    </li>
+
+
+    <li class="list-group-item "
+    routerLink="novedades"
+    routerLinkActive="active">
+
+      Novedades pendientes
+
+        </li>
+
+        <button  class="btn btn-primary" id="cesion" (click)="iraPadre()">Cerrar sesion</button>
+
+
+  </ul>
+
+    </div>
+
+    <div class="col" id="alcaldia">
+      <!-- Nuestras páginas -->
+      <router-outlet></router-outlet>
+
+    </div>
+
+  </div>
+
+
+
+</div>

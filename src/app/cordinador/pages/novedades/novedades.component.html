@@ -1,0 +1,36 @@
+<div id="mi-fondo">
+  <div class="contenido">
+    <h1 class="text-center mb-4">Registro de Novedad</h1>
+    <form class="row g-3">
+      <div class="col-12">
+        <input type="text" class="form-control mb-3" placeholder="Docente">
+      </div>
+      <div class="col-12">
+        <select class="form-control mb-3">
+          <option selected disabled>Novedad</option>
+          <option value="incapacidad">Incapacidad</option>
+          <option value="licencia">Licencia</option>
+          <option value="comision">Comisión</option>
+          <option value="permiso">Permiso</option>
+          <option value="renuncia">Renuncia</option>
+          <option value="retiro">Retiro</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control mb-3" placeholder="Observaciones"></textarea>
+      </div>
+      <div class="col-md-6 form-check">
+        <input class="form-check-input" type="checkbox" id="aprobadoCoordinador">
+        <label class="form-check-label" for="aprobadoCoordinador">Aprobado Coordinador</label>
+      </div>
+      <div class="col-md-6 form-check">
+        <input class="form-check-input" type="checkbox" id="aprobadoRector">
+        <label class="form-check-label" for="aprobadoRector">Aprobado Rector</label>
+      </div>
+      <div class="col-12 d-flex justify-content-between">
+        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+        <button routerLink="../" class="btn btn-secondary btn-lg">Volver</button>
+      </div>
+    </form>
+  </div>
+</div>

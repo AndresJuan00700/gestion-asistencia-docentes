@@ -1,0 +1,26 @@
+<div id="mi-fondo">
+  <div class="contenido">
+    <h1 class="text-center mb-4">Registro de asistencia</h1>
+
+      <div class="col-12">
+
+        <div class="qr" >
+          <zxing-scanner
+    (scanSuccess)="onCodeResult($event)"
+  ></zxing-scanner>
+        </div>
+
+        <div *ngIf="nombreDocente && horaEntrada">
+          <p><strong>Docente:</strong> {{ nombreDocente }}</p>
+          <p><strong>Hora de entrada:</strong> {{ horaEntrada }}</p>
+        </div>
+
+
+
+      <div class="col-12 d-flex justify-content-between">
+        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+        <button routerLink="../" class="btn btn-secondary btn-lg">Volver</button>
+      </div>
+
+  </div>
+</div>

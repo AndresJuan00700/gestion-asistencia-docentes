@@ -1,0 +1,42 @@
+#mi-fondo {
+  background-size: cover;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido principal */
+}
+
+.contenido {
+  background: #ffffff; /* Fondo blanco */
+  padding: 20px; /* Padding estándar */
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 800px; /* Aumenta el ancho máximo del contenedor */
+  width: 100%;
+  text-align: center;
+
+}
+
+.qr {
+  width: 200px; /* Ajusta este tamaño al que tenías */
+  height: 150px; /* Ajusta este tamaño al que tenías */
+  border: 2px solid black; /* Borde negro alrededor del div */
+  padding: 0; /* Quita cualquier padding adicional */
+  background-color: transparent; /* Quita cualquier fondo blanco */
+  box-shadow: none; /* Quita cualquier sombra */
+  border-radius: 5px; /* Opcional: bordes redondeados */
+  overflow: hidden; /* Evita que el contenido salga del div */
+  margin: 0 auto 20px auto; /* Centra horizontalmente y añade espacio debajo */
+}
+
+.qr zxing-scanner {
+  display: block; /* Asegura que el scanner ocupe todo el espacio del contenedor */
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Quita cualquier margen interno */
+  padding: 0; /* Quita cualquier padding interno */
+  background-color: transparent; /* Asegura que no haya fondo blanco */
+}
+

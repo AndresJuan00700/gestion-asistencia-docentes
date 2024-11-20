@@ -1,0 +1,50 @@
+<div class="contenidoi" >
+  <h1>Bienvenido</h1>
+  <hr>
+  <h3>Docente</h3>
+</div>
+
+
+<div id="mi-fondo">
+  <div class="row mt-4">
+
+    <div class="col-3">
+      <!-- Sidebar -->
+
+  <h2>Formularios</h2>
+  <hr>
+
+
+  <ul
+  class="list-group">
+
+
+    <li class="list-group-item "
+    routerLink="registro"
+    routerLinkActive="active">
+
+  Asistencia
+
+    </li>
+
+
+
+
+        <button  class="btn btn-primary" id="cesion" (click)="iraPadre()">Cerrar sesion</button>
+
+
+  </ul>
+
+    </div>
+
+    <div class="col" id="alcaldia">
+      <!-- Nuestras páginas -->
+      <router-outlet></router-outlet>
+
+    </div>
+
+  </div>
+
+
+
+</div>

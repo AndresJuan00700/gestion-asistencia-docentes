@@ -1,0 +1,19 @@
+#mi-fondo {
+  background-size: cover;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido principal */
+}
+
+.contenido {
+  background: #ffffff; /* Fondo blanco */
+  padding: 20px; /* Padding estándar */
+  margin-top: -10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 800px; /* Aumenta el ancho máximo del contenedor */
+  width: 100%;
+  text-align: center;
+}

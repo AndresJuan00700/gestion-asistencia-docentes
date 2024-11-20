@@ -1,0 +1,102 @@
+/* Centrado de contenedor principal */
+.container {
+  height: 100vh;
+}
+
+/* Caja del formulario */
+.login-box {
+
+  width: 800px; /* Aumenta el ancho para acomodar la imagen y el formulario */
+
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  display: flex; /* Flexbox para disposición en fila */
+}
+
+/* Imagen decorativa */
+.image-container {
+  width: 50%;
+  text-align: center;
+  padding: 20px; /* Añade un poco de relleno */
+}
+
+.decorative-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Formulario de login */
+.login-form {
+  width: 50%;
+  padding: 20px;
+}
+
+/* Imagen del logo */
+.login-logo {
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+/* Estilos para campos de entrada y botones */
+
+input[type="email"],
+input[type="password"],
+button {
+  font-size: 1.2rem;
+  padding: 12px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+
+/* Espaciado en elementos */
+.form-control {
+  margin-bottom: 10px;
+}
+
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Añade sombra para resaltar */
+}
+
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #004494;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+h4 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+
+
+}
+
+/* Botón al ancho del contenedor */
+.w-100 {
+  width: 100%;
+}
